@@ -3,6 +3,9 @@ OBJS = $(CPPFILES:.cpp=.o)
 GPPFLAGS = -Wall -O2 -ffreestanding -nostdinc -nostdlib -nostartfiles
 GCCPATH =  C:/msys64/mingw64/bin
 
+
+#https://wiki.osdev.org/GCC_Cross-Compiler -> read version of compiler... follow this tutorial
+
 all: clean kernel8.img
 
 boot.o: boot.S
